@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copa do Nordeste - Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://www.cdnfonts.com/playstation.font" rel="stylesheet">
+</head>
+
+<body style="font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 20px;">
+
+    <div style="text-align: center;">
+        <h1 style="color: #002b5c;">Login</h1>
+    </div>
+
+    <form action="enviar_cadastros" method="post" style="max-width: 500px; margin: 0 auto; background-color: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+        <fieldset style="border: none;">
+          <div>
+            <label for="nome"><strong>Nome:</strong></label><br>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required style="width: 100%; padding: 8px; margin-top: 5px;">
+          </div>
+          <br>
+      
+          <div>
+            <label for="email"><strong>Email:</strong></label><br>
+            <input type="email" id="email" name="email" placeholder="Digite seu email" required style="width: 100%; padding: 8px; margin-top: 5px;">
+          </div>
+          <br>
+      
+          <div>
+            <label for="comentario"><strong>Comentário:</strong></label><br>
+            <textarea id="comentario" name="comentario" placeholder="Faça um comentário" style="width: 100%; height: 80px; padding: 8px; margin-top: 5px;"></textarea>
+          </div>
+        </fieldset>
+      
+        <fieldset style="border: none;">
+          <div>
+            <label for="genero"><strong>Gênero:</strong></label><br>
+            <select id="genero" name="genero" style="width: 100%; padding: 8px; margin-top: 5px;">
+              <option value="">--Selecione--</option>
+              <option value="feminino">Feminino</option>
+              <option value="masculino">Masculino</option>
+              <option value="outro">Outro</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <br>
+
+        <!-- Botão para enviar -->
+        <div style="text-align: center;">
+          <button type="submit" style="background-color: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Enviar</button>
+        </div>
+
+        <br>
+
+        <!-- 🔹 Botão que leva até index.html -->
+        <div style="text-align: center;">
+          <button type="button" onclick="window.location.href='index.html'" 
+                  style="background-color: #002b5c; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+             Ir comprar Ingressos
+          </button>
+        </div>
+
+    </form>
+
+</body>
+</html>
